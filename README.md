@@ -13,7 +13,7 @@ cd %appdata%
 wget python.py
 wget powershell.ps1
 
-schtasks /create /sc hourly   /tn Wallpaper_change /tr "%appdata%/Win-Wallpaper/wallpaper.py"  /st 00:00
+schtasks /create /sc hourly   /tn Wallpaper_change /tr "start /b %appdata%/Win-Wallpaper/wallpaper.py"  /st 00:00
 ```
 
 ### Task scheduling with Windwos Task Scheduler
