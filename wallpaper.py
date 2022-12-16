@@ -14,4 +14,4 @@ print(image)
 path = r"C:\Windows\Temp\rao.jpg"
 urllib.request.urlretrieve(image,path)
 print("url downloaded")
-subprocess.call("%SystemRoot%/system32/WindowsPowerShell/v1.0/powershell.exe %appdata%/Win-Wallpaper/rs.ps1", shell=True)
+subprocess.call("%SystemRoot%/system32/WindowsPowerShell/v1.0/powershell.exe %appdata%/Win-Wallpaper/power_script.ps1", shell=True)
