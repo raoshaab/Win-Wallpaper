@@ -16,23 +16,23 @@ curl -s https://raw.githubusercontent.com/raoshaab/Win-Wallpaper/main/power_scri
 curl -s https://raw.githubusercontent.com/raoshaab/Win-Wallpaper/main/task_script.vbs -o Win-Wallpaper/task_script.vbs
 
 
-schtasks /create /sc hourly   /tn Wallpaper_change_hour /tr "%appdata%/Win-Wallpaper/task_script.vbs" 
+schtasks /create /sc hourly   /tn Wallpaper_change_hour /tr "%appdata%/Win-Wallpaper/task_script.vbs" /st 00:00
 ```
 
 ### Task scheduling with Windows Task Scheduler
 To schedule the task every hour 
 ```
-schtasks /create /sc hour /mo 1 /tn Wallpaper_change_hour /tr "%appdata%/Win-Wallpaper/task_script.vbs" 
+schtasks /create /sc hour /mo 1 /tn Wallpaper_change_hour /tr "%appdata%/Win-Wallpaper/task_script.vbs" /st 00:00
 ```
 
 To schedule the task every minute 
 ```
-schtasks /create /sc minute /mo 1 /tn Wallpaper_change_minute /tr "%appdata%/Win-Wallpaper/task_script.vbs" 
+schtasks /create /sc minute /mo 1 /tn Wallpaper_change_minute /tr "%appdata%/Win-Wallpaper/task_script.vbs" /st 00:00
 ```
 
 To schedule the task every everyday 
 ```
-schtasks /create /sc daily  /mo 1 /tn Wallpaper_change_everyday /tr "%appdata%/Win-Wallpaper/task_script.vbs" 
+schtasks /create /sc daily  /mo 1 /tn Wallpaper_change_everyday /tr "%appdata%/Win-Wallpaper/task_script.vbs"  /st 00:00
 ```
  
 ### To remove all tasks 
