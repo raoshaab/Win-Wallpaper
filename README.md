@@ -9,7 +9,7 @@ curl
 ### Try Now
 
  ```
-cd %appdata% && mkdir Win-Wallpaper && cd Win-Wallpaper
+cd %appdata% && mkdir Win-Wallpaper 
 
 curl -s https://raw.githubusercontent.com/raoshaab/Win-Wallpaper/main/wallpaper.py -o Win-Wallpaper/wallpaper.py
 curl -s https://raw.githubusercontent.com/raoshaab/Win-Wallpaper/main/power_script.ps1 -o Win-Wallpaper/power_script.ps1
@@ -19,7 +19,7 @@ curl -s https://raw.githubusercontent.com/raoshaab/Win-Wallpaper/main/task_scrip
 schtasks /create /sc hourly   /tn Wallpaper_change_hour /tr "%appdata%/Win-Wallpaper/task_script.vbs" 
 ```
 
-### Task scheduling with Windwos Task Scheduler
+### Task scheduling with Windows Task Scheduler
 To schedule the task every hour 
 ```
 schtasks /create /sc hour /mo 1 /tn Wallpaper_change_hour /tr "%appdata%/Win-Wallpaper/task_script.vbs" 
