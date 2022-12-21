@@ -1,5 +1,7 @@
-# Win-Wallpaper
-Windows Wallpaper Changes every hour, using python for downloading random wallpapers from unsplash then using powershell script to set the desktpo wallpaper.    
+# :window: :desktop_computer: Win-Wallpaper
+
+This script will help you to changes your wallpapers randomly on minute,hourly or daily basis.
+Using python3 for downloading random wallpapers from unsplash then using powershell script to set the desktop wallpaper and automating these stuff with Task Scheduler .   
 
 
 ### Requirement
