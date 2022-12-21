@@ -27,7 +27,7 @@ schtasks /create /sc hourly   /tn Wallpaper_change_hour /tr "%appdata%/Win-Wallp
 
 ## Demo
 
-<img src="./assets/xp-logo.jpeg" alt="scrcpy"  width="250" /> 
+<img src="./assets/xp-logo.jpeg" alt="scrcpy"  width="450" /> 
 
 ### Task scheduling 
 
