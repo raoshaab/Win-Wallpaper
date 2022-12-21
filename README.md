@@ -40,12 +40,12 @@ schtasks /create /sc daily  /mo 1 /tn Wallpaper_change_daily /tr "%appdata%/Win-
 ### To remove all tasks 
 
 ```
-schtasks /delete tn Wallpaper_change_hour /f
+schtasks /delete /tn Wallpaper_change_hour /f
 ```
 If you have added minute & everyday 
 ```
-schtasks /delete tn Wallpaper_change_minute /f
-schtasks /delete tn Wallpaper_change_everyday /f
+schtasks /delete /tn Wallpaper_change_minute /f
+schtasks /delete /tn Wallpaper_change_everyday /f
 ```
 
 ### To remove the script from system 
