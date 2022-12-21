@@ -1,8 +1,8 @@
 # <img src="./assets/win7.logo.png" alt="7logo" align="center" width="50" /> :desktop_computer: Win-Wallpaper
+<img src="./assets/xp-logo.jpeg" alt="xp"  width="450" /> 
 
 
-This script will help you to changes your wallpapers randomly on minute,hourly or daily basis.
-Using python3 for downloading random wallpapers from unsplash then using powershell script to set the desktop wallpaper and automating these stuff with Task Scheduler .   
+This script will help automate the changing of your wallpapers randomly on a minute, hourly, or daily basis using Python 3 for downloading random wallpapers from Unsplash, PowerShell scripts to set the desktop wallpaper, and Task Scheduler to automate the process.
 
 
 ## Requirement
@@ -27,7 +27,7 @@ schtasks /create /sc hourly   /tn Wallpaper_change_hour /tr "%appdata%/Win-Wallp
 
 ## Demo
 
-<img src="./assets/xp-logo.jpeg" alt="scrcpy"  width="450" /> 
+<img src="./assets/win-wallpaper.gif" alt="gif_here"   />
 
 ### Task scheduling 
 
@@ -45,8 +45,6 @@ schtasks /create /sc minute /mo 1 /tn Wallpaper_change_minute /tr "%appdata%/Win
 ```
 schtasks /create /sc daily  /mo 1 /tn Wallpaper_change_daily /tr "%appdata%/Win-Wallpaper/task_script.vbs"  /st 00:00
 ```
-
-
 
 ### To remove all tasks 
 
