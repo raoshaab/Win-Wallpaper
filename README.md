@@ -6,7 +6,8 @@ Windows Wallpaper Changes every hour, using python for downloading random wallpa
 python3  
 curl 
 
-### Try Now
+## Usage
+* Open cmd & copy paste the below commands 
 
  ```
 cd %appdata% && mkdir Win-Wallpaper 
