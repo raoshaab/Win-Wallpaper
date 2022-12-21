@@ -45,5 +45,5 @@ schtasks /delete tn Wallpaper_change_{hour/minute/everyday} /f
 ### To remove the script from system 
 
 ```
-rmdir %appdata%/Win-Wallpaper 
+rmdir %appdata%\Win-Wallpaper /s /q 
 ```
