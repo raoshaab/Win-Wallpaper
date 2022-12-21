@@ -20,26 +20,32 @@ curl -s https://raw.githubusercontent.com/raoshaab/Win-Wallpaper/main/task_scrip
 schtasks /create /sc hourly   /tn Wallpaper_change_hour /tr "%appdata%/Win-Wallpaper/task_script.vbs" /st 00:00
 ```
 
-### Task scheduling with Windows Task Scheduler
-To schedule the task every hour 
+### Task scheduling 
+
+* To schedule the task every hour 
 ```
 schtasks /create /sc hour /mo 1 /tn Wallpaper_change_hour /tr "%appdata%/Win-Wallpaper/task_script.vbs" /st 00:00
 ```
 
-To schedule the task every minute 
+* To schedule the task every minute 
 ```
 schtasks /create /sc minute /mo 1 /tn Wallpaper_change_minute /tr "%appdata%/Win-Wallpaper/task_script.vbs" /st 00:00
 ```
 
-To schedule the task every everyday 
+* To schedule the task daily
 ```
-schtasks /create /sc daily  /mo 1 /tn Wallpaper_change_everyday /tr "%appdata%/Win-Wallpaper/task_script.vbs"  /st 00:00
+schtasks /create /sc daily  /mo 1 /tn Wallpaper_change_daily /tr "%appdata%/Win-Wallpaper/task_script.vbs"  /st 00:00
 ```
  
 ### To remove all tasks 
 
 ```
-schtasks /delete tn Wallpaper_change_{hour/minute/everyday} /f
+schtasks /delete tn Wallpaper_change_hour /f
+```
+If you have added minute & everyday 
+```
+schtasks /delete tn Wallpaper_change_minute /f
+schtasks /delete tn Wallpaper_change_everyday /f
 ```
 
 ### To remove the script from system 
