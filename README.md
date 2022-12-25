@@ -2,7 +2,7 @@
 <img src="./assets/xp-logo.jpeg" alt="xp"  width="450" /> 
 
 
-This script will help automate the changing of your wallpapers randomly on a minute, hourly, or daily basis using Python 3 for downloading random wallpapers from Unsplash, PowerShell scripts to set the desktop wallpaper, and Task Scheduler to automate the process.
+This script will help automate the changing of your wallpapers randomly on a minute, hourly, or daily basis , downloading random wallpapers from Unsplash, PowerShell scripts to set the desktop wallpaper, and Task Scheduler to automate the process.
 
 
 ## Requirement
