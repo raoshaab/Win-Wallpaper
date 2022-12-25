@@ -1,3 +1,11 @@
+$url = "https://imagesbydev.dev-drive.workers.dev/api/v1/images"
+$data1 = Invoke-WebRequest -Uri $url -UserAgent 'Mozilla/5.0'
+$data = $data1.Content | ConvertFrom-Json
+$number = Get-Random -Minimum 0 -Maximum 29
+$image = $data.results[$number].imageUrl
+$path = "C:\Windows\Temp\rao.jpg"
+Invoke-WebRequest -Uri $image -OutFile $path
+
 $setwallpapersource = @"
 using System.Runtime.InteropServices;
 public class wallpaper
@@ -15,4 +23,4 @@ SystemParametersInfo( SetDesktopWallpaper, 0, path, UpdateIniFile | SendWinIniCh
 "@
 
 Add-Type -TypeDefinition $setwallpapersource
-[wallpaper]::SetWallpaper('C:\Windows\Temp\rao.jpg')    
+[wallpaper]::SetWallpaper('C:\Windows\Temp\rao.jpg')
