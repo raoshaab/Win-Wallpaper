@@ -6,7 +6,7 @@ This script will help automate the changing of your wallpapers randomly on a min
 
 
 ## Requirement
-python3  
+Powershell 
 curl 
 
 ## Usage
@@ -17,7 +17,6 @@ curl
  ```
 cd %appdata% && mkdir Win-Wallpaper 
 
-curl -s https://raw.githubusercontent.com/raoshaab/Win-Wallpaper/main/wallpaper.py -o Win-Wallpaper/wallpaper.py
 curl -s https://raw.githubusercontent.com/raoshaab/Win-Wallpaper/main/power_script.ps1 -o Win-Wallpaper/power_script.ps1
 curl -s https://raw.githubusercontent.com/raoshaab/Win-Wallpaper/main/task_script.vbs -o Win-Wallpaper/task_script.vbs
 
