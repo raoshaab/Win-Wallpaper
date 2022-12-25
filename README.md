@@ -6,8 +6,8 @@ This script will help automate the changing of your wallpapers randomly on a min
 
 
 ## Requirement
-Powershell 
-curl 
+
+curl  
 
 ## Usage
 
