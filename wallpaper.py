@@ -7,8 +7,7 @@ import random
 url = "https://imagesbydev.dev-drive.workers.dev/api/v1/images"
 data1 = urllib.request.Request(url,headers={'User-Agent': 'Mozilla/5.0'}) 
 data  =  urllib.request.urlopen(data1).read().decode()
-number=random.randint(0,29)
-image = json.loads(data)["results"][number]["imageUrl"]
+image = json.loads(data)
 
 path = r"C:\Windows\Temp\rao.jpg"
 urllib.request.urlretrieve(image,path)
