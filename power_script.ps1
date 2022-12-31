@@ -1,8 +1,6 @@
 $url = "https://imagesbydev.dev-drive.workers.dev/api/v1/images"
 $data1 = Invoke-WebRequest -Uri $url -UserAgent 'Mozilla/5.0'
-$data = $data1.Content | ConvertFrom-Json
-$number = Get-Random -Minimum 0 -Maximum 29
-$image = $data.results[$number].imageUrl
+$image = $data1.Content | ConvertFrom-Json
 $path = "C:\Windows\Temp\rao.jpg"
 Invoke-WebRequest -Uri $image -OutFile $path
 
