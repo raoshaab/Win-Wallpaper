@@ -24,6 +24,16 @@ curl -s https://raw.githubusercontent.com/raoshaab/Win-Wallpaper/main/task_scrip
 schtasks /create /sc hourly   /tn Wallpaper_change_hour /tr "%appdata%/Win-Wallpaper/task_script.vbs" /st 00:00
 ```
 
+* For Linux Users 
+
+```
+curl -s https://raw.githubusercontent.com/raoshaab/Win-Wallpaper/main/linux_wall.sh -o ~/.local/share/linux-wall.sh
+```
+* To shedule For Every hour
+```        
+echo "00 * * * * sh /home/${USER}/.local/share/linux-wall.sh" | sort -u | crontab -
+```
+
 ## Demo
 
 <img src="./assets/win-wallpaper.gif" alt="gif_here"   />
