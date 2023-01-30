@@ -1,7 +1,6 @@
 # <img src="./assets/win7.logo.png" alt="7logo" align="center" width="50" /> :desktop_computer: Win-Wallpaper
 <img src="./assets/xp-logo.jpeg" alt="xp"  width="450" /> 
 
-
 This script will help automate the changing of your wallpapers randomly on a minute, hourly, or daily basis , downloading random wallpapers from Unsplash, PowerShell scripts to set the desktop wallpaper, and Task Scheduler to automate the process.
 
 
@@ -20,17 +19,22 @@ cd %appdata% && mkdir Win-Wallpaper
 curl -s https://raw.githubusercontent.com/raoshaab/Win-Wallpaper/main/power_script.ps1 -o Win-Wallpaper/power_script.ps1
 curl -s https://raw.githubusercontent.com/raoshaab/Win-Wallpaper/main/task_script.vbs -o Win-Wallpaper/task_script.vbs
 
-
 schtasks /create /sc hourly   /tn Wallpaper_change_hour /tr "%appdata%/Win-Wallpaper/task_script.vbs" /st 00:00
+```
+* For Creating a Shortcut on Desktop
+Open powershell and run these commands 
+
+```
+$WshShell = New-Object -ComObject WScript.Shell;
+$Shortcut = $WshShell.CreateShortcut("$env:USERPROFILE\Desktop\win-wall.lnk");
+$Shortcut.TargetPath = "$env:AppData\Win-Wallpaper\task_script.vbs";
+$Shortcut.Save()
 ```
 
 * For Linux Users 
-
-```
-curl -s https://raw.githubusercontent.com/raoshaab/Win-Wallpaper/main/linux_wall.sh -o ~/.local/share/linux-wall.sh
-```
 * To shedule For Every hour
-```        
+```
+curl -s https://raw.githubusercontent.com/raoshaab/Win-Wallpaper/main/linux_wall.sh -o ~/.local/share/linux-wall.sh;
 echo "00 * * * * sh /home/${USER}/.local/share/linux-wall.sh" | sort -u | crontab -
 ```
 
