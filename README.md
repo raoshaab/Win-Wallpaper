@@ -11,7 +11,7 @@ curl
 ## Usage
 
 
-* Open cmd & copy paste the below commands 
+* **Windows**       Open cmd & copy paste the below commands 
 
  ```
 cd %appdata% && mkdir Win-Wallpaper 
@@ -31,8 +31,7 @@ $Shortcut.TargetPath = "$env:AppData\Win-Wallpaper\task_script.vbs";
 $Shortcut.Save()
 ```
 
-* For Linux Users 
-* To shedule For Every hour
+* **Linux**                 { To shedule For Every hour }
 ```
 curl -s https://raw.githubusercontent.com/raoshaab/Win-Wallpaper/main/linux_wall.sh -o ~/.local/share/linux-wall.sh;
 echo "00 * * * * sh /home/${USER}/.local/share/linux-wall.sh" | sort -u | crontab -
