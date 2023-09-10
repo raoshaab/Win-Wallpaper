@@ -32,7 +32,7 @@ schtasks /create /sc hourly   /tn Wallpaper_change_hour /tr "%appdata%/Win-Wallp
 
 * To schedule the task every hour 
 ```
-schtasks /create /sc hour /mo 1 /tn Wallpaper_change_hour /tr "%appdata%/Win-Wallpaper/task_script.vbs" /st 00:00
+schtasks /create /sc hourly /mo 1 /tn Wallpaper_change_hour /tr "%appdata%/Win-Wallpaper/task_script.vbs" /st 00:00
 ```
 
 * To schedule the task every minute 
