@@ -1,3 +1,5 @@
+  [![HitCount](https://hits.dwyl.com/raoshaab/raoshaab/Win-Wallpaper.svg?style=flat-square)](http://hits.dwyl.com/raoshaab/raoshaab/Win-Wallpaper)
+  
 # <img src="./assets/win7.logo.png" alt="7logo" align="center" width="50" /> :desktop_computer: Win-Wallpaper
 <img src="./assets/xp-logo.jpeg" alt="xp"  width="450" /> 
 
